@@ -1,0 +1,90 @@
+body {
+  background-color: #9CB7C5;
+  margin: 0;
+}
+@media only screen and (max-width: 400px) {
+  .calculator {
+    width: 100% !important;
+    min-width: 200px;
+    height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .calculator .display {
+    top: 0 !important;
+    height: 17% !important;
+  }
+  .calculator .input-area {
+    top: 0 !important;
+    height: 83% !important;
+  }
+}
+.calculator {
+  width: 350px;
+  height: 575px;
+  border-radius: 32px;
+  background-color: #00695C;
+  box-shadow: 1px 3px 25px rgba(0, 0, 0, 0.25);
+  margin: 30px auto;
+}
+.calculator .display {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  height: 17%;
+  min-height: 92px;
+  background-color: #F5F8FA;
+  color: #95989A;
+}
+.calculator .display #input-display {
+  margin: 0 15px;
+  text-align: right;
+  line-height: 1.3em;
+  font-family: "Roboto Thin", sans-serif;
+  font-size: 60px;
+}
+.calculator .display #input-formula {
+  margin: 0 19px;
+  text-align: right;
+  line-height: 0.1em;
+  font-family: "Roboto Light", sans-serif;
+  font-size: 19px;
+}
+.calculator .input-area {
+  position: relative;
+  top: 10%;
+  width: 100%;
+  height: 64%;
+}
+.calculator .input-area button {
+  outline: none !important;
+  cursor: pointer;
+  cursor: hand;
+  display: inline-block;
+  float: left;
+  width: 25%;
+  height: 20%;
+  border: 1px rgba(0, 0, 0, 0.1) solid;
+  font-family: "Roboto", sans-serif;
+  font-size: 33px;
+}
+.calculator .input-area button:active {
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.16);
+  filter: saturate(60%);
+}
+.calculator .input-area .wide-button {
+  width: 50%;
+}
+.calculator .input-area .action-button {
+  background-color: #97DBD5;
+  color: #557975;
+}
+.calculator .input-area .numeric-button {
+  background-color: #B2DFDB;
+  color: #557975;
+}
+.calculator .input-area .operation-button {
+  background-color: #4DB6AC;
+  color: #E0F2F1;
+  font-size: 40px;
+}
